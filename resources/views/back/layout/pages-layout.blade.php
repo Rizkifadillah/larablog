@@ -244,9 +244,13 @@
 							<a class="dropdown-item" href="faq.html"
 								><i class="dw dw-help"></i> Help</a
 							>
-							<a class="dropdown-item" href="login.html"
+							<a class="dropdown-item" href="{{ route('admin.logout') }}" 
+								onclick="event.preventDefault();document.getElementById('logout-form').submit();"
 								><i class="dw dw-logout"></i> Log Out</a
 							>
+							<form action="{{ route('admin.logout') }}" id='logout-form' method="POST">
+								@csrf
+							</form>
 						</div>
 					</div>
 				</div>

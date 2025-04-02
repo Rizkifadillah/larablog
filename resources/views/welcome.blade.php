@@ -1,3 +1,9 @@
+{{-- 
+git remote add origin https://github.com/Rizkifadillah/larablog.git
+git branch -M main
+git push -u origin main 
+--}}
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>

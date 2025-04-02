@@ -26,9 +26,10 @@ Route::prefix('admin')->name('admin.')->group(function(){
         });
     });
 
-    Route::middleware([])->group(function(){
+    Route::middleware(['auth'])->group(function(){
         Route::controller(AdminController::class)->group(function(){
             Route::get('/dashboard','adminDashboard')->name('dashboard');
+            Route::post('/logout', 'logoutHandler')->name('logout');
         });
     });
 });
