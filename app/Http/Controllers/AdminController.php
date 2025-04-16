@@ -9,7 +9,7 @@ class AdminController extends Controller
 {
     public function adminDashboard(Request $request){
         $data = [
-            'pageTitle'=>'Login'
+            'pageTitle'=>'Dashboard'
         ];
         return view('back.pages.dashboard', $data);
     }
